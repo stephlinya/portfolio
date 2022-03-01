@@ -1,0 +1,215 @@
+@use "../style/globals" as *;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $pinkBeige;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: $blue;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* typography */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link {
+    color: $yellow;
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    margin-top: -0.4em;
+    margin-bottom: 1.5em;
+    font-size: 3rem;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+.pink-heading {
+    color: $pink;
+}
+
+.accent-text--yellow {
+    color: $yellow;
+}
+
+.accent-text--coral {
+    color: $coral;
+}
+
+.logo__img {
+    width: 80px;
+    margin-top: 0.7em;
+    margin-left: 0.7em;
+}
+
+.link:hover, .link:focus {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.accent-btn {
+    background-color: $pink;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 40px;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+    &__bar {
+        display: flex;
+        justify-content: flex-end;
+    } 
+    
+    &__item {
+        list-style-type: none;
+        margin-right: 1.5em;
+    }
+
+    &__links {
+        text-decoration: none;
+        color: $yellow;
+    }
+
+    &__links:hover, &__links:focus {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
+
+.container {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.line {
+    width: 10%;
+    border-bottom: 5px solid $yellow;
+    margin-bottom: 2.5em;
+}
+
+.hero {
+    display: flex;
+    overflow: hidden;
+
+    &__content {
+        width: 50%;
+        align-self: center;
+    }
+
+    &__text {
+        margin-left: 1em;
+    }
+
+    &__imgdiv {
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__imgbg {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 60%;
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+}
+
+.selected {
+    margin-right: 2em;
+    margin-top: 3em;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    &__heading {
+        text-align: right;
+    }
+
+    &__imgdiv {
+        width: 40%;
+        height: 500px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 0%;
+        cursor: pointer;
+    }
+
+    &__chance {
+        margin-top: 300px;
+    }
+
+}
+
+.footer {
+    margin-top: 4em;
+    background-color: $yellow;
+    color: rgba(white, 60%);
+    text-align: center;
+    padding: 3em;
+    
+    &__heading {
+        margin-bottom: 0.5em;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    &__icon {
+        display: inline-block;
+        opacity: 60%;
+        width: 60px;
+    }
+
+    &__copyright {
+        margin-top: 0.5em;
+    }
+}
+
+
