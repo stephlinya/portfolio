@@ -41,7 +41,7 @@ h1, h2, h3 {
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .pink-heading {
@@ -177,11 +177,9 @@ h3 {
 }
 
 .img-link:nth-child(2n-1), .img-link:nth-child(2n-1) {
-  box-shadow: -20px -18px 2px 8px rgba(239, 150, 154, 0.8);
-}
-
-.img-link:nth-child(2n-1):hover, .img-link:nth-child(2n-1):focus {
-  box-shadow: -20px -18px 2px 8px rgba(239, 150, 154, 0.8);
+  padding-left: 1em;
+  padding-top: 1em;
+  box-shadow: -10px -10px 0px 3px rgba(239, 150, 154, 0.8);
 }
 
 .footer {

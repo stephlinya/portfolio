@@ -1,0 +1,39 @@
+
+@use "../style/globals" as g;
+
+.about {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+    &__imgdiv {
+        width: 30%;
+        align-self: center;
+    }
+
+    &__content {
+        width: 35%;
+        font-size: 2rem;
+        margin-right: 2em;
+    }
+
+    &__heading {
+        color: g.$pink;
+    }
+
+    &__text {
+        margin-left: 1em;
+    }
+
+    &__img {
+        width: auto;
+        height: 600px;
+        object-fit: cover;
+        margin-left: 2em;
+    }
+
+    h2 {
+        margin-bottom: 0.5em;
+    }
+
+}

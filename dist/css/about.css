@@ -1,0 +1,31 @@
+.about {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.about__imgdiv {
+  width: 30%;
+  align-self: center;
+}
+.about__content {
+  width: 35%;
+  font-size: 2rem;
+  margin-right: 2em;
+}
+.about__heading {
+  color: #EF969B;
+}
+.about__text {
+  margin-left: 1em;
+}
+.about__img {
+  width: auto;
+  height: 600px;
+  object-fit: cover;
+  margin-left: 2em;
+}
+.about h2 {
+  margin-bottom: 0.5em;
+}
+
+/*# sourceMappingURL=about.css.map */
