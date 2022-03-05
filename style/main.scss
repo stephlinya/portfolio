@@ -10,7 +10,7 @@ body {
     background-color: $pinkBeige;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: $blue;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 img {
@@ -30,13 +30,15 @@ a {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 0.4em;
 }
 
 h2 {
     margin-top: -0.4em;
     margin-bottom: 1.5em;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 h1, h2, h3 {
@@ -44,11 +46,26 @@ h1, h2, h3 {
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
-.pink-heading {
-    color: $pink;
+@media (min-width: 800px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+}
+
+#work-heading {
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 .accent-text--yellow {
@@ -57,6 +74,10 @@ h3 {
 
 .accent-text--coral {
     color: $coral;
+}
+
+.accent-text--pink {
+    color: $pink;
 }
 
 .arrow {
@@ -113,11 +134,10 @@ h3 {
 
 .container {
     width: 100%;
-    padding-left: 2em;
 }
 
 .line {
-    width: 10%;
+    width: 12%;
     border-bottom: 5px solid $yellow;
     margin-bottom: 2.5em;
 }
@@ -125,6 +145,7 @@ h3 {
 .hero {
     display: flex;
     overflow: hidden;
+    padding-left: 1em;
 
     &__content {
         width: 50%;
@@ -157,13 +178,14 @@ h3 {
 }
 
 .selected {
-    margin: 4em 4em 0 2em;
+    margin-top: 4em;
 
     &__container {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 1em;
+        align-items: center;
+        gap: 4em;
     }
 
     &__heading {
@@ -171,48 +193,60 @@ h3 {
     }
 
     &__img {
-        width: 600px;
-        height: 450px;
+        width: 100%;
         object-fit: cover;
-        object-position: 50% 0%; 
     }
 
-    &__chance {
-        margin-top: 300px;
+    &__projtext {
+       width: inherit;
     }
 
+    &__project {
+        width: 450px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .selected {
+
+        &__container {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        &__project {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 45%;
+            gap: 2em;
+        }
+
+        &__projtext {
+            width: 40%;
+        }
+
+        &__img {
+           width: 600px;
+           height: 500px;
+        }
+    }
+    
+    
 }
 
 .img-link {
+    width: 60%;
     cursor: pointer;
-    height: 50%;
+    opacity: 0.85;
 }
 
-.img-link:nth-child(2n){
-    padding-right: 1em;
-    padding-bottom: 1em;
-    box-shadow: 10px 10px 0px 3px rgba(249, 171, 140, 0.8);
+.img-link:hover, .img-link:focus {
+    opacity: 1;
+    border-bottom: 5px solid $yellow;
 }
-
-.img-link:nth-child(2n-1), .img-link:nth-child(2n-1){
-    padding-left: 1em;
-    padding-top: 1em;
-    box-shadow: -10px -10px 0px 3px rgba(239, 150, 154, 0.8);
-}
-
-// .img-link:nth-child(2n-1):hover, .img-link:nth-child(2n-1):focus {
-//     padding-left: 1.5em;
-//     padding-top: 1.5em;
-// }
-
-
-// .img-link:nth-child(2n):hover, .img-link:nth-child(2n):focus {
-//     box-shadow: 10px 10px 0px 3px rgba(249, 171, 140, 0.8);
-// }
-
-// .img-link:nth-child(2n-1):hover, .img-link:nth-child(2n-1):focus {
-//     box-shadow: -20px -18px 2px 8px rgba(239, 150, 154, 0.8);
-// }
 
 .footer {
     margin-top: 4em;

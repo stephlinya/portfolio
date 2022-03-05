@@ -1,0 +1,18 @@
+.project__info {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5em 0;
+}
+.project__child {
+  width: 25%;
+}
+
+.project > h2, .project__child > h2 {
+  margin-bottom: 0em;
+}
+
+.project__content > h1 {
+  margin-bottom: 0.3em;
+}
+
+/*# sourceMappingURL=project.css.map */
