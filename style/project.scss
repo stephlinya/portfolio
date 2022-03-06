@@ -1,12 +1,40 @@
+@use "../style/globals" as c;
+
+body {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 .project {
-    &__info {
-        display: flex;
-        justify-content: space-around;
-        margin: 1.5em 0;
+
+    &__content, &__outcome {
+        margin: 2em 2em 0 2em;
+        padding: 2em 2em 0 2em;
     }
 
-    &__child{
-        width: 25%;
+    &__outcome {
+        padding-bottom: 2em;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 1em 0;
+    }
+    
+    &__outcome {
+        background-color: c.$pink;
+        color: white;
+    }
+
+
+    &__mocks {
+        margin: 3em auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
@@ -18,3 +46,43 @@
     margin-bottom: 0.3em;
 }
 
+.project__mocks > img {
+    width: 50%;
+}
+
+
+@media (min-width: 1000px){
+    .project {
+        &__content, &__outcome {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &__outcome {
+            margin-bottom: 6em;
+        }
+
+        &__links {
+            width: 50%;
+        }
+
+        &__info, &__outcome--child {
+            width: 60%;
+            margin: 1em;
+        }
+
+        &__content--heading, &__outcome--heading {
+            width: 20%;
+        }
+
+            &__mocks {
+                flex-direction: row;
+            }
+    
+    }
+
+.project__mocks > img {
+    width: 20%;
+}
+}

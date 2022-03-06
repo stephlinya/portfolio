@@ -76,6 +76,14 @@ h3 {
   color: #e08283;
 }
 
+.accent-text--white {
+  color: white;
+}
+
+.accent-text--blue {
+  color: #1D38C7;
+}
+
 .arrow {
   vertical-align: middle;
   font-weight: 600;
