@@ -193,6 +193,7 @@ h3 {
         flex-wrap: wrap;
         align-items: center;
         gap: 4em;
+        width: 100vw;
     }
 
     &__heading {
@@ -206,6 +207,7 @@ h3 {
 
     &__projtext {
        width: inherit;
+       padding: 1em;
     }
 
     &__project {
@@ -213,6 +215,7 @@ h3 {
     }
 
 }
+
 
 @media (min-width: 1000px) {
     .selected {
@@ -233,6 +236,7 @@ h3 {
 
         &__projtext {
             width: 40%;
+            padding: 0;
         }
 
         &__img {

@@ -180,6 +180,7 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   gap: 4em;
+  width: 100vw;
 }
 .selected__heading {
   text-align: right;
@@ -190,6 +191,7 @@ h3 {
 }
 .selected__projtext {
   width: inherit;
+  padding: 1em;
 }
 .selected__project {
   width: 450px;
@@ -210,6 +212,7 @@ h3 {
   }
   .selected__projtext {
     width: 40%;
+    padding: 0;
   }
   .selected__img {
     width: 600px;

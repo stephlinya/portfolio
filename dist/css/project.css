@@ -7,7 +7,7 @@ body {
   width: 100vw;
 }
 .project__content, .project__outcome {
-  margin: 2em 2em 0 2em;
+  margin: 1em 1em 0 1em;
   padding: 2em 2em 0 2em;
 }
 .project__outcome {
@@ -17,11 +17,14 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 1em 0;
 }
 .project__outcome {
   background-color: #e08283;
   color: white;
+  margin: 2em;
+}
+.project__list {
+  margin: 1em 0;
 }
 .project__mocks {
   margin: 3em auto;
@@ -29,15 +32,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-.project__list {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 2em 0em;
-}
-.project__list--pro, .project__list--con {
-  width: 45%;
+  gap: 1em;
 }
 
 .project > h2, .project__child > h2 {
@@ -69,9 +64,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 2em 2em 0 2em;
   }
   .project__outcome {
-    margin-bottom: 6em;
+    margin: 4em 2em;
   }
   .project__links {
     width: 50%;
@@ -86,6 +82,16 @@ body {
   }
   .project__mocks {
     flex-direction: row;
+  }
+  .project__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0em;
+    margin: 0;
+  }
+  .project__list--pro, .project__list--con {
+    width: 45%;
   }
 
   .project__mocks > img {
@@ -117,7 +123,7 @@ body {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  object-position: 0% 0%;
+  object-position: 50% 0%;
 }
 .analysis__heading {
   text-align: center;
@@ -125,6 +131,12 @@ body {
 
 #momentum__img {
   object-position: 0 95%;
+}
+
+@media (min-width: 1000px) {
+  .analysis__img {
+    object-position: 0% 0%;
+  }
 }
 
 /*# sourceMappingURL=project.css.map */

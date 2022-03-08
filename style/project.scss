@@ -11,7 +11,7 @@ body {
     }
 
     &__content, &__outcome {
-        margin: 2em 2em 0 2em;
+        margin: 1em 1em 0 1em;
         padding: 2em 2em 0 2em;
     }
 
@@ -23,14 +23,17 @@ body {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin: 1em 0;
     }
     
     &__outcome {
         background-color: c.$pink;
         color: white;
+        margin: 2em;
     }
 
+    &__list {
+        margin: 1em 0;
+    }
 
     &__mocks {
         margin: 3em auto;
@@ -38,17 +41,7 @@ body {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-    }
-
-    &__list {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        padding: 2em 0em;
-    }
-
-    &__list--pro, &__list--con {
-        width: 45%;
+        gap: 1em;
     }
 }
 
@@ -83,10 +76,11 @@ body {
             display: flex;
             justify-content: space-around;
             align-items: center;
+            margin: 2em 2em 0 2em;
         }
 
         &__outcome {
-            margin-bottom: 6em;
+            margin: 4em 2em;
         }
 
         &__links {
@@ -103,9 +97,21 @@ body {
             margin: 1em;
         }
 
-            &__mocks {
-                flex-direction: row;
-            }
+        &__mocks {
+            flex-direction: row;
+        }
+
+        &__list {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 2em 0em;
+            margin: 0;
+        }
+    
+        &__list--pro, &__list--con {
+            width: 45%;
+        }
     
     }
 
@@ -140,7 +146,7 @@ body {
         width: 100%;
         height: 400px;
         object-fit: cover;
-        object-position: 0% 0%;
+        object-position: 50% 0%;
     }
 
     &__heading {
@@ -150,4 +156,10 @@ body {
 
 #momentum__img {
     object-position: 0 95%;
+}
+
+@media (min-width: 1000px){
+    .analysis__img {
+        object-position: 0% 0%;
+    }
 }
