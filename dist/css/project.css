@@ -3,6 +3,9 @@ body {
   font-weight: 400;
 }
 
+.project__hero {
+  width: 100vw;
+}
 .project__content, .project__outcome {
   margin: 2em 2em 0 2em;
   padding: 2em 2em 0 2em;
@@ -27,6 +30,15 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.project__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 0em;
+}
+.project__list--pro, .project__list--con {
+  width: 45%;
+}
 
 .project > h2, .project__child > h2 {
   margin-bottom: 0em;
@@ -38,6 +50,18 @@ body {
 
 .project__mocks > img {
   width: 50%;
+}
+
+.project__child > p {
+  margin-bottom: 1em;
+}
+
+.project__outcome--child > ul > li {
+  margin-bottom: 1em;
+}
+
+.project__list--pro > ul > li, .project__list--con > ul > li {
+  margin-left: 3em;
 }
 
 @media (min-width: 1000px) {
@@ -57,7 +81,8 @@ body {
     margin: 1em;
   }
   .project__content--heading, .project__outcome--heading {
-    width: 20%;
+    width: 30%;
+    margin: 1em;
   }
   .project__mocks {
     flex-direction: row;
@@ -66,6 +91,40 @@ body {
   .project__mocks > img {
     width: 20%;
   }
+}
+.mocks__details {
+  display: flex;
+  width: 40%;
+}
+
+.mocks__heading {
+  text-align: center;
+}
+
+#chance__mocks {
+  width: 30%;
+}
+
+.cta__links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.analysis {
+  align-self: flex-start;
+}
+.analysis__img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.analysis__heading {
+  text-align: center;
+}
+
+#momentum__img {
+  object-position: 0 95%;
 }
 
 /*# sourceMappingURL=project.css.map */
