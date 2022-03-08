@@ -193,11 +193,11 @@ h3 {
         flex-wrap: wrap;
         align-items: center;
         gap: 4em;
-        width: 100vw;
     }
 
     &__heading {
         text-align: right;
+        margin-right: 0.5em;
     }
 
     &__img {
