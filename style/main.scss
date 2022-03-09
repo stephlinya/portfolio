@@ -37,7 +37,7 @@ h1 {
 
 h2 {
     margin-top: -0.4em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     font-size: 1.5rem;
 }
 
@@ -56,6 +56,7 @@ h3 {
 
     h2 {
         font-size: 2.5rem;
+        margin-bottom: 1.5em;
     }
 
     h3 {
@@ -207,8 +208,8 @@ h3 {
     }
 
     &__projtext {
-       width: inherit;
-       padding: 1em;
+        width: inherit;
+        padding: 1em;
     }
 
     &__project {
@@ -248,6 +249,10 @@ h3 {
     }
     
     
+}
+
+.selected__projtext > p {
+    margin-bottom: 1.5em;
 }
 
 .img-link {
