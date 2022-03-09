@@ -53,7 +53,7 @@ h3 {
 
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.3em;
   }
 
   h3 {
@@ -121,7 +121,7 @@ h3 {
 }
 .nav__item {
   list-style-type: none;
-  margin-right: 1.2em;
+  margin-right: 1em;
 }
 .nav__links {
   text-decoration: none;
@@ -133,7 +133,7 @@ h3 {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -164,7 +164,6 @@ h3 {
   display: block;
   width: 100%;
   margin-left: auto;
-  overflow: hidden;
 }
 .hero__img {
   width: 60%;
