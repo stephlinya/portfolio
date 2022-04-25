@@ -36,9 +36,12 @@
   }
   .about__content {
     width: 35%;
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin-right: 2em;
   }
+}
+p {
+  margin-bottom: 0.7em;
 }
 
 /*# sourceMappingURL=about.css.map */
