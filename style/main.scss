@@ -94,12 +94,6 @@ h3 {
     color: $yellow;
 }
 
-.logo__img {
-    width: 80px;
-    margin-top: 0.5em;
-    margin-left: 0.3em;
-}
-
 .link:hover, .link:focus {
     font-weight: 600;
     text-decoration: underline;
@@ -138,6 +132,16 @@ h3 {
         font-weight: 600;
         text-decoration: underline;
     }
+    
+    &__logo {
+        font-family: "Courgette", "Dancing Script", cursive;
+        color: $pink;
+        padding: 30px;
+    }
+}
+
+.logo {
+    margin-bottom: 0;
 }
 
 .container {
@@ -190,6 +194,43 @@ h3 {
         right: 20px;
     }
 }
+
+.services {
+    margin-top: 4em;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2em;
+    }
+
+    &__block {
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px){
+    .services {
+       
+        &__body {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &__img {
+            margin: 0 auto;
+            display: inline-block;
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
 
 .selected {
     margin-top: 4em;

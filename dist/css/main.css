@@ -91,12 +91,6 @@ h3 {
   color: #f2a127;
 }
 
-.logo__img {
-  width: 80px;
-  margin-top: 0.5em;
-  margin-left: 0.3em;
-}
-
 .link:hover, .link:focus {
   font-weight: 600;
   text-decoration: underline;
@@ -130,6 +124,15 @@ h3 {
 .nav__links:hover, .nav__links:focus {
   font-weight: 600;
   text-decoration: underline;
+}
+.nav__logo {
+  font-family: "Courgette", "Dancing Script", cursive;
+  color: #e08283;
+  padding: 30px;
+}
+
+.logo {
+  margin-bottom: 0;
 }
 
 .container {
@@ -175,6 +178,34 @@ h3 {
   .hero__img {
     width: 60%;
     right: 20px;
+  }
+}
+.services {
+  margin-top: 4em;
+}
+.services__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+}
+.services__block {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .services__body {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .services__img {
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .services__block {
+    display: flex;
+    flex-direction: column;
   }
 }
 .selected {
