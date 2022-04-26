@@ -57,7 +57,7 @@ h3 {
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 #work-heading {
@@ -200,6 +200,9 @@ h3 {
 }
 
 @media (min-width: 600px) {
+  .services {
+    padding: 1em;
+  }
   .services__body {
     flex-direction: row;
     justify-content: space-around;
@@ -211,6 +214,10 @@ h3 {
   .services__block {
     display: flex;
     flex-direction: column;
+  }
+
+  .services__block > p {
+    padding: 1em;
   }
 }
 .selected {
