@@ -108,6 +108,11 @@ h3 {
     
 }
 
+.accent-btn:hover, .accent-btn:focus {
+    box-shadow: 0px 6px 6px rgba($pink, 0.3);
+    font-weight: 700;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
